@@ -1,4 +1,37 @@
 ﻿@page
 @model AWP_Individual_Project_1.Pages.ContactModel
 @{
+    ViewData["Title"] = "Contact Us";
 }
+
+<div class="display-4 text-center m-4">Contact Us</div>
+<form method="post">
+    <div class="mx-auto" style="width: max-content;">
+<label>First Name</label>
+<br />
+<input asp-for="fname" id="fname" type="text" required/>
+<br /><br />
+<label>Last Name</label>
+<br />
+<input asp-for="lname" id="lname" type="text" required/>
+
+        <br /><br />
+<label>Email</label>
+<br />
+<input asp-for="email" id="email" type="email" required/>
+        <br /><br />
+<label>Message</label>
+<br />
+<textarea asp-for="message" id="message" type="text" required/></textarea>
+        <br /><br />
+        <center><input asp-page-handler="submit" id="submit" type="submit" value="Submit" class="btn-primary" /></center>
+<br />
+<hr />
+<br />
+    <label style="color:@Model.MsgColor">@Model.userSubmitMsg</label><br />
+<label style="color:@Model.MsgColor">@Model.fnameMsg</label><br />
+    <label style="color:@Model.MsgColor">@Model.lnameMsg</label><br />
+    <label style="color:@Model.MsgColor">@Model.emailMsg</label><br />
+    <label style="color:@Model.MsgColor">@Model.messageMsg</label>
+    </div>
+</form>

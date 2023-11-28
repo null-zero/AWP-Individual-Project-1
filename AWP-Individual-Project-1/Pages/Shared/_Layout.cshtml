@@ -3,39 +3,45 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - AWP_Individual_Project_1</title>
+    <title>@ViewData["Title"] - AWP - IP1 - Lauren</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">AWP_Individual_Project_1</a>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom shadow-sm px-3 mb-3 pt-3 pb-0 pr-0">
+            <!-- <div class="container"> -->
+            <div class="navbar-brand">Indian Elephant<span class="small" style="color: #c35b22;"> // AWP Individual Project - Lauren W</span></div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <ul class="navbar-nav flex-grow-1 justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Habitat">Habitat</a>
+                            <a class="nav-link" asp-area="" asp-page="/Habitat">Habitat</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Gallery">Gallery</a>
+                            <a class="nav-link" asp-area="" asp-page="/Endangered">Threats</a>
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-page="/Charity">Save The Elephants</a>
+                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Gallery">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Resources">Resources</a>
+                            <a class="nav-link" asp-area="" asp-page="/Resources">Resources</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Contact">Contact</a>
+                            <a class="nav-link" asp-area="" asp-page="/Contact">Contact</a>
                         </li>
                     </ul>
                 </div>
-            </div>
+           <!-- </div> -->
         </nav>
     </header>
     <div class="container">
@@ -44,9 +50,9 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - AWP_Individual_Project_1 - <a asp-area="" asp-page="/Privacy">Privacy</a>
+    <footer class="footer">
+        <div class="text-muted float-right pr-4">
+            &copy; 2023<span class="small" style="color: #c35b22;"> // AWP Individual Project - Lauren W</span>
         </div>
     </footer>
 
